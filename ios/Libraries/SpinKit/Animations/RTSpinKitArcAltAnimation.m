@@ -48,7 +48,7 @@
     mask.path          = path;
     mask.strokeColor   = [[UIColor blackColor] CGColor];
     mask.fillColor     = [[UIColor clearColor] CGColor];
-    mask.lineWidth     = 2.0;
+    mask.lineWidth     = 4.0;
     mask.cornerRadius  = frame.size.width / 2.0;
     mask.anchorPoint   = CGPointMake(0.5, 0.5);
 
@@ -56,7 +56,7 @@
     
     CGPathRelease(path);
     
-    CGFloat duration = 1.2;
+    CGFloat duration = 2.4;
 
     CAKeyframeAnimation *strokeEndAnim = [CAKeyframeAnimation animationWithKeyPath:@"strokeEnd"];
     strokeEndAnim.removedOnCompletion = NO;
